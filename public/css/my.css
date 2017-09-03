@@ -1,0 +1,558 @@
+/* ----------------------------------------------------
+Stylesheet for http://www.YourProject.com
+
+Updated: 11/20/2012
+Author: Eric Watson
+Website: http://www.websitecodetutorials.com
+-------------------------------------------------------
+: Site Colors :
+background ... #CCC;
+
+: Table Of Contents :
+Resets
+Defaults
+Typography
+Forms
+Layout
+Links
+Menus
+Global Classes
+Content
+---------------------------------------------------- */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* -------------------- Resets --------------------- */
+body, form, fieldset, ol, ul, li, h1, h2, h3, h4, h5, h6, p {
+    margin:0;
+    padding:0;
+}
+img {
+    border:0; /* kills Gecko bug when img's are placed inside links */
+    vertical-align:bottom; /* set vertical align to bottom for IE */
+}
+/* ------------------- Defaults ------------------- */
+html {
+    height:100%;
+    overflow:auto; /* triggers 100% height in Opera 9.5 */
+    overflow-y:scroll; /* creates a horizontal scrollbar, for a more consistent look & feel */
+}
+body {
+    height:100%; /* helps make height 100% */
+    font:100%/1.5 Arial, Helvetica, sans-serif; /* 100% = 16px, 93.75% = 15px, 87.5% = 14px, 81.25% = 13px, 75% = 12px - font-size in % prevents IE's resize bug */
+    background:#FDFDFD;
+    color:#333;
+}
+/* ------------------ Typography ------------------- */
+h1, h2, h3, h4, h5, h6, p {
+    margin:0 0 1em;
+}
+p, ul, ol {
+    font-size:1em;
+}
+ul {
+    list-style:none;
+}
+h1 {font-size:1.6em;}
+h2 {font-size:1.5em;}
+h3 {font-size:1.4em;}
+h4 {font-size:1.3em;}
+h5 {font-size:1.2em;}
+h6 {font-size:1.1em;}
+/* -------------------- Forms ---------------------- */
+fieldset {
+    border:none;
+}
+form :focus {
+    outline:0; /* removes Safari's blue border */
+}
+input, select, textarea {
+    font-size:1em;
+    font-family:sans-serif, Arial, Helvetica;
+}
+label {
+    cursor:pointer;
+    vertical-align:middle;
+}
+input {
+    vertical-align:middle;
+}
+textarea {
+    overflow:auto; /* removes scrollbar from IE when none is needed */
+}
+/* -------------------- Layout --------------------- */
+#wrap {
+    margin:0 auto; /* centers layout */
+    min-height:100%; /* height 100% in all modern browsers */
+}
+#head {
+}
+#nav {
+}
+#content {
+}
+#left {
+    float:left;
+}
+#foot {
+    clear:both;
+}
+/* ------------------- Links ---------------------- */
+a {
+    text-decoration:underline;
+    color:#000;
+    outline:0; /* removes dotted border */
+}
+
+a:hover, a:focus, a:active {
+    text-decoration:none;
+    /* add-custom:outline-rule-here; */
+}
+/* --------------------- Menus -------------------- */
+/* Main Menu */
+#nav {
+}
+#nav li {
+}
+#nav a {
+    text-decoration:none;
+}
+#nav a:hover, #nav a:focus, #nav a:active {
+}
+/* Foot Menu */
+#foot ul {
+}
+#foot li {
+}
+#foot a {
+    text-decoration:none;
+}
+#foot a:hover, #foot a:focus, #foot a:active {
+}
+/* ---------------- Global Classes --------------- */
+.clear {
+    clear:both;
+    line-height:0;
+    height:0;
+    font-size:0;
+}
+.clearfix:after {
+    content:" ";
+    display:block;
+    height:0;
+    font-size:0;
+    clear:both;
+    visibility:hidden;
+}
+.clearfix {display:inline-block;}
+/* mac hide \*/
+* html .clearfix {height:1%;}
+.clearfix {display:block;}
+/* End hide */
+/* ------------------- Content ------------------- */
+
+.button {
+    position: relative;
+    max-width: 172px;
+    max-height: 51px;
+    background-color: #e84545;
+    color: #f6e9ff;
+    text-align: center;
+    text-decoration: none;
+    z-index: 10;
+    left: 45%;
+    top: 70%;
+    font-size: 14px;
+    padding: 10px 20px;
+    font-family: sans-serif;
+}
+
+input {
+    min-width: 250px;
+    min-height: 39px;
+    font-family: sans-serif;
+    padding-left: 14px;
+    display: block;
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    max-height: 900px;
+    overflow: hidden;
+}
+
+.video__screen {
+    width: 100%;
+}
+
+.video__container {
+    width: 655px;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+}
+
+.video__textblock {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.video__fogging {
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.video__title .video__description .video__button {
+    font-family: sans-serif;
+
+}
+
+
+.video__title {
+    text-align: center;
+    z-index: 10;
+    font-size: 29px;
+    color: #94a9b1;
+    font-weight: bold;
+    top: 35%;
+    position: relative;
+}
+
+.video__description {
+    position: relative;
+    z-index: 10;
+    top: 40%;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+.video__button {
+    max-width: 172px;
+    max-height: 51px;
+    background-color: #e84545;
+    color: #f6e9ff;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    z-index: 10;
+    left: 45%;
+    top: 70%;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+
+/* Benefits */
+.benefits {
+    width: 100%;
+}
+
+.benefits__container {
+    max-width: 840px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.benefits__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 70px -15px 120px -15px;
+}
+
+.benefits__item {
+    width: 33%;
+    padding: 0px 15px 30px 15px;
+    display: none;
+
+}
+
+.benefits__image {
+    position: relative;
+    left: 35%;
+}
+
+.benefits__title {
+    margin: 10px auto;
+    text-align: center;
+    font-weight: bold;
+}
+.benefits__description {
+    width: 225px;
+    margin: 0 auto;
+}
+
+
+ /*gallery */
+
+.gallery {
+    width: 100%;
+}
+
+.gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery__item {
+    position: relative;
+    width: 25%;
+    padding: 1px;
+}
+
+.gallery__image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.gallery__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #d64445;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.gallery__item:hover .gallery__overlay {
+    height: 100%;
+}
+
+.gallery__title  {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    overflow: hidden;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.gallery__description {
+    position: absolute;
+    width: 80%;
+    top: 55%;
+    left: 65%;
+    overflow: hidden;
+    color: white;
+    font-size: 16px;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.quote {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    min-height: 500px;
+    width: 100%;
+    background-color: #53354a;
+}
+
+.quote__container {
+    position: relative;
+    min-height: 400px;
+    width: 50%;
+}
+
+.quote__right {
+    left: 50%;
+}
+
+.quote__image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    left: -100%;
+}
+
+.quote__text {
+    max-width: 332px;
+    padding: 180px 10px 0 0;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.quote__author {
+    max-width: 332px;
+    padding-top: 20px;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: cursive;
+}
+
+
+.download {
+    height: 238px;
+    width: 100%;
+}
+
+.download__container {
+    max-width: 810px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.download__title {
+    position: relative;
+    text-align: center;
+    top: 20%;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.download__text {
+    position: relative;
+    top: 24%;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.download__button {
+    bottom: -100px;
+    left: 40%;
+}
+
+.download__popup {
+    position: relative;
+    margin: 0 auto;
+    align-content: center;
+    padding: 100px;
+    height: 400px;
+    width: 500px;
+    background-color: #fff;
+}
+
+#popup__download__file {
+    position: absolute;
+    left: 38%;
+    top: 75%;
+}
+
+.popup__header {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+
+
+@media (max-width: 1440px) {
+    .video__fogging {
+        height: 99%;
+    }
+
+    .gallery__description {
+        left: 53%;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .benefits__list {
+        margin: 40px -5px 40px 0px;
+    }
+}
+
+@media (max-width: 425px) {
+    .video__title {
+        font-size: 14px;
+        top: 20%;
+        left: -20%;
+    }
+
+    .video__description {
+        width: 240px;
+        left: 10%;
+        height: 26px;
+        top: 23%;
+        font-size: 12px;
+    }
+
+    .video__button {
+        max-width: 123px;
+        left: 35%;
+        top: 76%;
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+
+    .video__fogging {
+        height: 97%;
+    }
+
+    .benefits {
+        width: 93%;
+    }
+
+    .benefits__list {
+        margin: 40px -5px 40px 0px;
+    }
+
+    .benefits__item {
+        width: 50%;
+    }
+
+    .benefits__image {
+        left: 28%;
+    }
+
+    .benefits__description {
+        width: 133px;
+        max-height: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .gallery__item {
+        width: 50%;
+    }
+
+    .gallery__title {
+        font-size: 16px;
+        top: 36%;
+    }
+
+    .gallery__description {
+        left: 50%;
+        font-size: 11px;
+    }
+
+    .quote__container {
+        width: 100%;
+    }
+
+    .quote__text {
+        padding: 10px 0px 24px 0px;
+    }
+
+    .download__button {
+        left: 28%;
+    }
+}
