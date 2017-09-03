@@ -13,6 +13,11 @@
 <body>
 @include('admin/partials/header')
 
+    @if (isset($sent))
+        <div class="alert alert-success" style="width: 60%; margin: 0 auto;">
+            Emails sent successfully.
+        </div>
+    @endif
 <div class="col-md-12">
     <div style="max-width: 810px; margin: 0 auto;">
         <form action="/admin/email/send" method="post">
@@ -35,11 +40,6 @@
             </div>
         </form>
     </div>
-    @if (isset($sent))
-        <div class="alert alert-success">
-            Emails sent successfully.
-        </div>
-    @endif
 </div>
 
 
@@ -48,5 +48,10 @@
 <script src="{{asset('/js/jquery.min.js')}}"></script>
 <script src="{{asset('/js/bootstrap.min.js')}}"></script>
 <script src="{{asset('/js/bootstrap-datepicker.min.js')}}"></script>
+<script>
+    $('.alert').on('click',function () {
+        $(this).hide(300);
+    })
+</script>
 </body>
 </html>

@@ -13,7 +13,11 @@
 <body>
 @include('admin/partials/header')
 
-<h3> File downloaded: {{ $downloadsQnt }} times </h3>
+<div class="row">
+    <div class="center-block col-md-4" style="float: none; font-size: 19px;font-weight: bold;">
+        File downloaded: {{ $downloadsQnt }} times
+        </div>
+</div>
 
 <script src="{{asset('/js/jquery.min.js')}}"></script>
 <script src="{{asset('/js/bootstrap.min.js')}}"></script>
